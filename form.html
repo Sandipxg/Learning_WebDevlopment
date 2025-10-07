@@ -8,34 +8,44 @@
 </head>
 
 <body>
-    <form action="sample.jpg">
+    <form action="#" method="post" enctype="multipart/form-data">
         <fieldset>
             <legend> User details </legend>
 
             Name : <input type="text" name="Username" placeholder="Enter your username"> <br>
-            Password : <input type="text" name="pasword" placeholder="Enter your password"> <br>
+            Password : <input type="password" name="pasword" placeholder="Enter your password" required minlength="6">
+            <br>
             Email : <input type="email" name="email" placeholder="put ur email here"> <br>
-            PhoneNumber : <input type="tel" name="telenumber" placeholder="Phone number"> <br> 
-<br>
+            PhoneNumber : <input type="tel" name="telenumber" placeholder="Phone number"> <br>
+            <br>
             BirthDate : <input type="date" name="bdate">
-<br>
-<br>
+            <br>
+            <br>
             Gender : <input type="radio" name="gender" value="Male"> Male <br>
             <input type="radio" name="gender" value="Female"> Female <br>
             <input type="radio" name="gender" value="Other"> other <br>
-<br>
+            <br>
             Hobbies : <input type="checkbox" name="hobby" value="sing"> sing <br>
             <input type="checkbox" name="hobby" value="swim"> swim <br>
             <input type="checkbox" name="hobby" value="dance"> dance <br>
-<br>
+            <br>
             Degree : <select name="degree">
+                <option value="default" selected hidden disabled> choose degree </option>
                 <option value="Btech"> Btech</option>
                 <option value="Mbbs"> Mbbs </option>
                 <option value="BBA"> BBA </option>
-                </select>
-<br>
-            Feedback : <textarea name="textarea" placeholder="Give your feedback here" rows="5"> </textarea>
+            </select>
+            <br>
 
+            level : <input type="range" name="range" min="10" max="100" step="20">
+
+            Upload : <input type="file" name="file" accept=".pdf,.jpg">
+            <br>
+            Feedback : <textarea name="textarea" placeholder="Give your feedback here" rows="5"> </textarea>
+            <br>
+
+            Reset : <input type="reset">
+            submit : <input type="submit">
 
 
 
